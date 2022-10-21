@@ -20,3 +20,4 @@ When developing this project locally, please add the following node modules via 
 -   When events are emitted, there are 2 kinds of parameters; indexed and non indexed. You can have up to 3 indexed parameters, and are searchable. They are much easier to query than non indexed parameters
 -   Non indexed parameters get abi encoded, and we need to know the abi to be able to decode it.
 -   Events should be emitted with the function name reversed
+-   Verified contract: https://goerli.etherscan.io/address/0xf59250c87Dc0eb6C6220d790B8Ac2cAFB6769927#code
