@@ -1,4 +1,4 @@
-const { developmentChains } = require("../helper-hardhat-config")
+const { devChains } = require("../helper-hardhat-config")
 
 // To check what the premium is, check the docs here:
 // https://docs.chain.link/docs/vrf/v2/subscription/supported-networks/#goerli-testnet
@@ -11,7 +11,7 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
     const { deployer } = await getNamedAccounts()
     const args = [BASE_FEE, GAS_PRICE_LINK]
 
-    if (developmetnChains.includes(network.name)) {
+    if (devChains.includes(network.name)) {
         log("Deploying mocks to local network")
         await deploy("VRFCoordinatorV2Mock", {
             from: deployer,
